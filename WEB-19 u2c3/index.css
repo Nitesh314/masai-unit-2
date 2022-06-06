@@ -1,0 +1,84 @@
+body>h1{
+    color: blue;
+   text-align: center;
+   text-decoration: underline;
+   
+}
+input[type="submit"]{
+    background-color:rgb(14, 120, 241) ;
+    color: white;
+    padding: 10px 64px;
+    margin-top: 10px;
+    border-radius:10px ;
+    border: none;
+    
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: red;
+}
+div>form{
+    width: 200px;
+    height: 300px;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+div>form>input{
+    border-radius: 5px;
+    border-color: rgb(156, 150, 150);
+}
+div>form>select{
+    border-radius: 5px;
+    border-color: rgb(156, 150, 150);
+}
+
+*{
+    box-sizing: border-box;
+}
+table{
+    width: 60%;
+    margin: auto;
+    margin-top: -8px;
+    text-align: center;
+    
+}
+
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+
+}
+
+table td,
+table th{
+    border:1px solid ;
+    padding:5px;
+    text-align: center;
+    font-size: 25px;
+
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+   
+   
+    
+    
+
+    
+    
