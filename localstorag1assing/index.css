@@ -1,0 +1,50 @@
+#nav{
+    display: flex;
+    border: 1px solid;
+   justify-content: space-around;
+   margin-bottom: 30px;
+   font-size: 22px;
+   background-color: skyblue;
+  
+  
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+
+
+
+
+#contenar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(9,auto);
+    gap: 20px;
+}
+#contenar>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 10px;
+}
+h3{
+    font-size: 15px;
+    margin-left: 5px;
+}
+p{
+    margin-left:5px;
+}
+p+p{
+    color:red;
+    margin-left:5px;
+    text-decoration: line-through;
+}
+button{
+    margin-left:5px;
+    cursor: pointer;
+
+   
+}
+button:hover{
+    background-color: blue;
+    color:white;
+}
