@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    
+    <div id="nav">
+        <a href="index.html"><h3>HOME PAGE</h3></a>
+        <a href="studentlist.html"><h3>studentlist</h3></a>
+
+        <!-- <h3 id="batch3">batch1</h3>
+        <h3 id="batch4">batch2</h3> -->
+
+
+    </div>
+    <div id="bigbox">
+         <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="masai logo" id="logo">
+        <form onsubmit="myfun(event)" id="form">
+            <input type="text" placeholder="Enter Name" id="name">
+            <input type="text" placeholder="Entetr Course" id="course">
+            <input type="number" placeholder="Enter Unit" id="unit">
+            <input type="url" placeholder="Enter Image" id="image">
+            <select  id="batch">
+                <option value="">Batches</option>
+                <option value="batch1" id="bth1">batch1</option>
+                <option value="batch2" id="bth2">batch2</option>
+            </select>
+            <input type="submit" id="btn">
+        </form>
+
+
+    </div>
+
+</body>
+</html>
+
+<script>
+
+function Studentdata(n,c,u,i,b){
+    this.name=n;
+    this.course=c;
+    this.unit=u;
+    this.image=i;
+    this.batch=b;
+
+}
+
+function myfun(e){
+    e.preventDefault();
+    
+    let form=document.querySelector("#form");
+
+    let name=form.name.value;
+    let course=form.course.value;
+    let unit=form.unit.value;
+    let image=form.image.value;
+    let batch=form.batch.value;
+
+    
+    let data= new Studentdata(name,course,unit,image,batch)
+    //  console.log
+    let student_data=JSON.parse(localStorage.getItem("studentdata"))||[];
+    //console.log(student_data)
+    student_data.push(data);
+    console.log(student_data)
+
+    
+    localStorage.setItem("studentdata",JSON.stringify(student_data))
+
+
+    // console.log(data);
+}
+
+
+
+</script>

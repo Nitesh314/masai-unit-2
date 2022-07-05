@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+//    let arr=new Array(1,2,3);
+
+
+//    let arr1=[1,2,3,4];
+
+
+//    Array.prototype.nitesh=function (){
+//     console.log("nitesh shukla")
+//    };
+
+//    arr1.nitesh();
+
+var arr=[1,2,3];
+
+// let x=arr.map(function (x){
+
+//     return x*2;
+
+// })
+// console.log("x:",x)
+
+Array.prototype.myMap=function (fun){
+
+    let newarr=[];
+    for(var i=0;i<this.length;i++)
+    {
+        let element=arr[i];
+        
+        let m=fun(element);
+         
+        newarr.push(m);
+        
+        
+    }
+    return newarr;
+}
+
+let x=arr.myMap(function(m){
+    return m*2;
+
+})
+console.log("x:",x)
+
+</script>

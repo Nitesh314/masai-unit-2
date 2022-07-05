@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+#nav{
+    width: 100%;
+    height: 50px;
+    border:1px solid;
+    display: flex;
+    justify-content: right;
+    gap: 60px;
+    background-color: white;
+}
+
+#nav>a{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+}
+#slideshow{
+    width: 100%;
+    height: 400px;
+    border: 1px solid;
+    margin-top: 10px;
+}
+#img{
+    width: 100%;
+    height: 500px;
+}
+#movies{
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    margin-top: 150px;
+    gap: 10px;
+}
+#movies>div{
+    border: solid red;
+}
+img{
+    width: 100%;
+}
+p{
+    color:white;
+}

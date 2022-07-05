@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenaor{
+            display: grid;
+            grid-template-columns: repeat(5,150px);
+            grid-template-rows: repeat(3,100px);
+            gap: 25px;
+            justify-content:center;
+            margin: auto;
+            margin-left: 200px;
+            margin-top: 150px;
+            grid-template-areas: 
+            "a b b c"
+            "d d e f"
+            "g h h h";
+
+        }
+        #contenaor > div{
+            background-color:rgb(33,120,103);
+            border-radius: 10px;
+        } 
+
+        #contenaor > div:nth-child(1){
+            grid-area: a;
+        }
+
+
+        #contenaor > div:nth-child(2){
+            grid-area: a;
+        }
+
+        #contenaor > div:nth-child(3){
+            grid-area: b;
+        }
+
+        #contenaor > div:nth-child(4){
+            grid-area: c;
+        }
+
+        #contenaor > div:nth-child(5){
+            grid-area: d;
+        }
+
+        #contenaor > div:nth-child(6){
+            grid-area: e;
+        }
+
+        #contenaor > div:nth-child(7){
+            grid-area: f;
+        }
+
+        #contenaor > div:nth-child(8){
+            grid-area: g;
+        }
+
+        #contenaor > div:nth-child(9){
+            grid-area: h;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenaor">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contaner">
+    <h1>masai</h1>
+    <p>Sing Up</p>
+    <input id="name"  type="text" placeholder="Enter your full name"/>
+    <br> 
+    <input id="email" type="email" placeholder="Enter your email"/>
+    <br>
+    <input id="password" type="password" placeholder="Create your password"/>
+    <br>
+   
+    <p></p>
+    <button>SING UP</button>
+</div>
+</body>
+</html>
+<script>
+document.querySelector("button").addEventListener("click",singfun)
+
+var dataArr=[];
+function singfun(){
+   
+    var objData={
+        name:document.querySelector("#name").value,
+        enmail:document.querySelector("#email").value,
+        password:document.querySelector("#password").value,
+    }
+    
+    
+    dataArr.push(objData)
+console.log(dataArr)
+
+  
+}
+</script>
